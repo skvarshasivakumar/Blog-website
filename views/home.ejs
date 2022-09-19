@@ -1,0 +1,10 @@
+<%- include("partials/header") -%>
+<h1>Home</h1>
+<p><%=homeContent%></p>
+<br>
+<%homevalue.forEach(function(homes){%>
+  <h1><%=homes.titlecompose%></h1>
+  <p><%=homes.textcompose.substring(0,100)+"..."%>
+  <a href="/posts/<%=homes.titlecompose%>">Read More</a></p>
+<%});%>
+<%- include("partials/footer") -%>
